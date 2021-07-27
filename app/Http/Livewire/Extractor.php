@@ -24,5 +24,6 @@ class Extractor extends Component
             'content' => $this->text,
             'id'=>$content->id
         ]);
+        dd($response->body());
     }
 }
