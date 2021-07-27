@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Content;
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 
@@ -18,25 +19,10 @@ class Extractor extends Component
 
     }
     public function extraction(){
+        $content=Content::create(['content'=>$this->text]);
         $response = Http::asForm()->post('http://20.205.232.75/extractor', [
-            'content' => $this->text
+            'content' => $this->text,
+            'id'=>$content->id
         ]);
-
-//        $client = new \GuzzleHttp\Client();
-        // Send an asynchronous request.
-//        $request = $client->request('POST', 'http://20.205.232.75/extractor/',[
-//            'form_params' => [
-//                'content'=>$this->text
-//            ]
-//        ]);
-////        $request->getBody();
-//        dd($request->getBody());
-//        dd("asda");
-
-//        $promise = $client->sendAsync($request)->then(function ($response) {
-//            $this->keyword=$response->getBody()['keyword'];
-//            $this->keyphrases=$response->getBody()['keyphrases'];
-//        });
-//        $promise->wait();
     }
 }
