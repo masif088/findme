@@ -30,8 +30,8 @@ class Extractor extends Component
             $c=Content::find($content->id);
         }
 
-        $this->keyword=str_replace(",","<br>",$c->keywords);
-        $this->keyphrases=str_replace(",","<br>",$c->keyphrases);
+        $this->keyword=str_replace(",","\n",$c->keywords);
+        $this->keyphrases=str_replace(",","\n",$c->keyphrases);
     }
 
 }
