@@ -10,13 +10,14 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @livewireStyles
     <title>Keyword - Extractor</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
         body, html {
             height: 100%;
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 30px;
         }
 
