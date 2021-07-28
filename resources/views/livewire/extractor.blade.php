@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-lg-6 p-4">
             <div style="height: 600px; background-color: #ACDEF3; border-radius: 25px;" class="p-3">
-                <textarea name="" id="" rows="15" wire:model="text"
-                          style="width: 100%; border-radius: 25px;border: none; padding: 10px"></textarea>
+                <textarea name="" id="" rows="18" wire:model="text"
+                          style="width: 100%; border-radius: 25px;border: none; padding: 10px;"></textarea>
                 <br>
 
                 <div class="center">
@@ -24,7 +24,7 @@
                         KATA KUNCI
                     </div>
                 </div>
-                <textarea name="" id="" rows="5"
+                <textarea name="" id="" rows="7"
                           style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px">{!! $keyword !!}</textarea>
             </div>
             <div style="height: 290px; background-color: #ACDEF3; border-radius: 25px; margin-bottom: 20px" class="p-3">
@@ -33,7 +33,7 @@
                         FRASA KUNCI
                     </div>
                 </div>
-                <textarea name="" id="" rows="5"
+                <textarea name="" id="" rows="7"
                           style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" >{!! $keyphrases !!}</textarea>
             </div>
         </div>

@@ -17,8 +17,8 @@
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 30px;
+
+            line-height: 25px;
         }
 
         .bg {
