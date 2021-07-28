@@ -10,6 +10,9 @@
                     <button class="btn-custom" wire:click="extraction">
                         Sederhanakan
                     </button>
+                    <div wire:loading wire:target="extraction">
+                        Processing ...
+                    </div>
                 </div>
             </div>
         </div>

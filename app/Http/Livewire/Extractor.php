@@ -24,6 +24,13 @@ class Extractor extends Component
             'content' => $this->text,
             'id'=>$content->id
         ]);
-        dd($response->body());
+        $c=Content::find($content->id);
+        while($c->keywords==null){
+            sleep(5);
+            $c=Content::find($content->id);
+        }
+        $this->keyword=$c->keywords;
+        $this->keyphrases=$c->keyphrases;
     }
+
 }
