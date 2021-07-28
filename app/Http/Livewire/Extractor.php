@@ -20,7 +20,7 @@ class Extractor extends Component
     }
     public function extraction(){
         $content=Content::create(['content'=>$this->text]);
-        $response = Http::asForm()->post('http://20.205.232.75/extractor', [
+        $response = Http::asForm()->post('http://52.163.211.98/extractor', [
             'content' => $this->text,
             'id'=>$content->id
         ]);

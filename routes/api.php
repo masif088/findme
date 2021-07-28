@@ -23,4 +23,5 @@ Route::post('setKeyword',function (Request $request){
         'keywords'=>$request->keywords,
         'keyphrases'=>$request->keyphrases
     ]);
+    return "some";
 });
