@@ -29,8 +29,9 @@ class Extractor extends Component
             sleep(5);
             $c=Content::find($content->id);
         }
-        $this->keyword=$c->keywords;
-        $this->keyphrases=$c->keyphrases;
+
+        $this->keyword=str_replace(",","&#13;&#10",$c->keywords);
+        $this->keyphrases=str_replace(",","&#13;&#10",$c->keyphrases);
     }
 
 }

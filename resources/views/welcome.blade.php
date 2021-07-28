@@ -12,6 +12,11 @@
     <title>Keyword - Extractor</title>
     <style>
         body, html {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
             height: 100%;
         }
         .bg {

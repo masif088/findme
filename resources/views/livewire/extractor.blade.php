@@ -5,13 +5,13 @@
                 <textarea name="" id="" rows="19" wire:model="text"
                           style="width: 100%; border-radius: 25px;border: none; padding: 10px"></textarea>
                 <br>
-                <br>
+
                 <div class="center">
                     <button class="btn-custom" wire:click="extraction">
-                        Sederhanakan
+                        SEDERHANAKAN
                     </button>
                     <div wire:loading wire:target="extraction">
-                        Processing ...
+                        Menunggu proses ...
                     </div>
                 </div>
             </div>
@@ -21,20 +21,20 @@
             <div style="height: 290px; background-color: #ACDEF3; border-radius: 25px; margin-bottom: 20px" class="p-3">
                 <div class="center">
                     <div class="bg-header">
-                        Kata Kunci
+                        KATA KUNCI
                     </div>
                 </div>
                 <textarea name="" id="" rows="8"
-                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px" wire:model="keyword"></textarea>
+                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" wire:model="keyword"></textarea>
             </div>
             <div style="height: 290px; background-color: #ACDEF3; border-radius: 25px; margin-bottom: 20px" class="p-3">
                 <div class="center">
                     <div class="bg-header">
-                        Frasa Kunci
+                        FRASA KUNCI
                     </div>
                 </div>
                 <textarea name="" id="" rows="8"
-                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px" wire:model="keyphrases"></textarea>
+                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" wire:model="keyphrases"></textarea>
             </div>
         </div>
     </div>
