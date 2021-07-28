@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <textarea name="" id="" rows="5"
-                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" wire:model="keyword"></textarea>
+                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px">{!! $keyword !!}</textarea>
             </div>
             <div style="height: 290px; background-color: #ACDEF3; border-radius: 25px; margin-bottom: 20px" class="p-3">
                 <div class="center">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <textarea name="" id="" rows="5"
-                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" wire:model="keyphrases"></textarea>
+                          style="width: 100%; border-radius: 25px;border: none; margin-top: 10px;padding: 10px" >{!! $keyphrases !!}</textarea>
             </div>
         </div>
     </div>
